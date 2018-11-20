@@ -26,12 +26,7 @@ app.get("/log", function(req, res){
 
 app.post("/", jsonParser, function (req, res) {
      
-    if (!req.body) {
-        return res.sendStatus(400);
-    }
-    console.log(req.body);
-    
-    if (!req.body.data && !req.body.data.username && !req.body.data.email && !req.body.data.score) {
+    if (!req.body || !req.body.data || !req.body.data.score) {
         return res.sendStatus(400);
     }
     
@@ -41,8 +36,8 @@ app.post("/", jsonParser, function (req, res) {
 
     
     
-    const username = curScore.data.username;
-    const email = curScore.data.email;
+    const username = (!curScore.data.username || curScore.data.username === '') ? 'Unknown Hero' : curScore.data.username;
+    const email = (!curScore.data.email || curScore.data.email === '') ? 'Unknown' : curScore.data.email;
     const userScore = curScore.data.score;
     const currentScore = {
         username: username,
