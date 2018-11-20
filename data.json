@@ -1,1 +1,7 @@
-[{"username":"sdasd","email":"Leamhein@hotmail.com","score":863}]
+[
+  { "username": "sdasd", "email": "Leamhein@hotmail.com", "score": 863 },
+  { "username": "Unknown Hero", "email": "Unknown", "score": 966 },
+  { "username": "Vladimir", "email": "Leamhein@hotmail.com", "score": 933 },
+  { "username": "Leam", "email": "Leamhein@hotmail.com", "score": 953 },
+  { "username": "Vladimir", "email": "Leamhein@hotmail.com", "score": 927 }
+]
