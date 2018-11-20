@@ -26,7 +26,6 @@ app.get("/", function(req, res) {
 });
 
 app.get("/log", function(req, res) {
-      
     const content = fs.readFileSync("server.log", "utf8");
 
     res.send(content);
