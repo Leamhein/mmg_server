@@ -7,7 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const jsonParser = bodyParser.json();
 
-const uri = "mongodb+srv://Uladzimir:211989206@cluster0-8fxtg.gcp.mongodb.net/test?retryWrites=true";
+const uri = "mongodb://mmg-database:MLyAaneRJH2k5HD4AAnqJatnSJwOasvZ2jSMUOqWvJdbw0ARTaaLKERGJWYid4bGJ6FjAA5vVoOngZzmL0XigQ%3D%3D@mmg-database.documents.azure.com:10255/?ssl=true";
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
